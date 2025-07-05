@@ -1,0 +1,11 @@
+Bubble sort :
+here the i runs n-1 times..i.e(0 -> n-2)..ek kam
+and j runs n-i-1 times.
+i.e first j runs for n-1 times i.e (n-i-1 and here i starts from 0)
+then n-2 times and so on upto 1----which makes the time complexity of -> n-1 + n-2 + n-3 + ....1 = O(N^2)
+
+Selection Sort:
+here the i runs n-1 times..i.e (0 -> n-2 times)..ek kam
+and j runs from i+1 to n...
+i.e first j runs for n-1 times, then n-2 ....upto 1 times
+so time complexity will be -> O(N^2)
