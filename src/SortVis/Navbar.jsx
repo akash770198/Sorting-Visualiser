@@ -4,6 +4,9 @@ const Navbar = ({ onSort, sliderValue, onSliderChange, isSorting, selectedAlgo }
     return (
         <div className="w-full bg-[#bae1ff] p-4">
             <div className="flex flex-col md:flex-row items-center justify-between">
+                <div className="text-2xl font-bold text-blue-900 tracking-wide md:px-10">
+                    Sorting Visualiser
+                </div>
 
                 {/* Algo Buttons */}
                 <div className="flex flex-wrap justify-center gap-x-6 gap-y-3">
@@ -22,8 +25,8 @@ const Navbar = ({ onSort, sliderValue, onSliderChange, isSorting, selectedAlgo }
                 </div>
 
                 {/* Slider bar */}
-                <div className="mt-6 md:mt-0 md:ml-20 flex items-center gap-3">
-                    <label className="text-blue-800 font-bold whitespace-nowrap">Size & Speed:</label>
+                <div className="mt-6 md:mt-0 md:ml-10 flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+                    <label className="text-blue-900 font-bold whitespace-nowrap">Size & Speed:</label>
                     <input
                         type="range"
                         min="1"
@@ -33,7 +36,7 @@ const Navbar = ({ onSort, sliderValue, onSliderChange, isSorting, selectedAlgo }
                         onChange={(e) => onSliderChange(Number(e.target.value))}
                         className="w-40 cursor-pointer"
                     />
-                    <span className="text-blue-800 font-bold">{sliderValue}</span>
+                    <span className="text-blue-900 font-bold">{sliderValue}</span>
                 </div>
             </div>
         </div>
